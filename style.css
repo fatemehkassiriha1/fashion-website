@@ -1,0 +1,302 @@
+@font-face {
+    src: url(fonts/Oswald-Regular.ttf);
+    font-family: oswald;
+}
+@font-face {
+    src: url(fonts/Rubik-Regular.ttf);
+    font-family: rubik;
+}
+@font-face {
+    src: url(fonts/Lobster-Regular.ttf);
+    font-family:lobster ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: rubik,oswald;
+}
+a{
+    text-decoration: none;
+    color:rgba(85, 85, 85, 0.637) ;
+}
+a:hover{
+    color:rgba(85, 85, 85, 0.637) ;
+}
+hr{
+    color: rgba(0, 0, 0, 0.425);
+    width: 100%;
+}
+ul li{
+    list-style-type:none;
+}
+.btn{
+    border-radius: 1.2rem;
+}
+.white{
+    color: white;
+}
+.hr{
+
+    margin: 20px 10px;
+    height: 2px;
+    width: 70px;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+.clear{
+    clear: both;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.collapse ul{
+    list-style-type: none;
+    margin-bottom: 0px;
+    padding-left: 12px;
+    width: 65%;
+}
+.collapse ul li,.nav-item{
+    margin-right: 15px;
+}
+.collapse ul li a , .nav-link{
+    padding: 15px;
+    font-size: 15px;
+    border-bottom: 3px solid white;
+    transition-property: border-bottom,color;
+    transition-duration: 500ms;
+    border-bottom-right-radius:2px ;
+    border-bottom-left-radius: 2px;
+    color:rgba(85, 85, 85, 0.637);
+}
+.collapse ul li a:hover ,.nav-link:hover{
+    color:rgb(0, 0, 0);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.671);
+    border-bottom-right-radius:2px ;
+    border-bottom-left-radius: 2px;
+}
+.collapse ul li a:focus{
+    color:rgba(0, 0, 0, 0.671) ;
+}
+.collapse form .searchnav{
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    padding:5px 8px;
+    padding-left: 10px;
+    margin: 0 5px;
+    width: 80%;
+    border-radius: 1.2rem ;
+    
+}
+.collapse form .searchnav:focus{
+    outline: none; 
+}
+.collapse form i{
+    text-align: right;
+    margin-left:5px ;
+    cursor: pointer;
+}
+
+/* carousel */
+#owl-demo .item img{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    object-fit: cover;  
+} 
+#owl-demo .item .title-carusel{
+    position: absolute;
+    z-index: 2;
+    bottom: 160px;
+    left:100px;
+    padding:50px 10px;
+    text-align: center;
+
+}
+#owl-demo .item .title-carusel h1{
+    font-family:'Courgette';
+    font-weight: 900;
+    font-size: 60px;
+}
+#owl-demo .item .title-carusel p{
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-family: oswald;
+ }
+#owl-demo .item .title-carusel .btn{
+    margin-top: 70px;
+    padding: 10px 40px;
+    border-radius: 2.1rem;
+    font-size: 17px;
+}
+
+.trend{
+    margin: 80px;
+    
+}
+.trend .container .row  #container-inner{
+    text-align: center ;
+    height: 65%;
+    margin-top: 70px;
+}
+.trend .container .row h5{
+    text-align: left;
+    font-weight: 800;
+    font-size: 40px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.trend .container .row .inner-p-trend{
+    text-align: left;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.699);
+}
+.trend .container .row button{
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 2.2rem;
+    border-color: rgba(0, 0, 0, 0.699);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.trend .container .row img{
+    float: right;
+    text-align: left ;
+}
+
+/* carusel natueral style */
+.natural-style h4{
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+}
+.natural-style .hr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+
+}
+#owl-natural .item{
+    position: relative;
+}
+
+#owl-natural .item .title-carosel-natural .btn{
+    position: absolute;
+    bottom: 60px;
+    left: 150px;
+    padding: 7px 20px;
+}
+#owl-natural .item .title-carosel-natural p{
+    margin-bottom: 70px;
+    position: absolute;
+    bottom: 60px;
+    left: 120px;
+    color: rgb(219, 218, 218);
+    font-size: 30px;
+}
+.gradiant{
+
+    background-image: linear-gradient(to top,rgba(33, 41, 38, 0.575),rgba(33, 41, 38, 0.616),rgba(197, 212, 207,0),rgba(197, 212, 207,0)),url('images/natural.jpeg');
+    height: 500px;
+    background-size:cover;
+    margin-right: 30px;
+    margin-left: 30px;
+    transition: transform .4s;
+}
+.gradiant1{
+
+    background-image: linear-gradient(to top,rgba(33, 41, 38, 0.575),rgba(33, 41, 38, 0.616),rgba(197, 212, 207,0),rgba(197, 212, 207,0)),url('images/natural1.jpeg');
+    height: 500px;
+    background-size:cover;
+    margin-right: 30px;
+    margin-left: 30px;
+    transition: transform .4s;
+}
+.gradiant2{
+
+    background-image: linear-gradient(to top,rgba(33, 41, 38, 0.575),rgba(33, 41, 38, 0.616),rgba(197, 212, 207,0),rgba(197, 212, 207,0)),url('images/natural2.jpeg');
+    height: 500px;
+    background-size:cover;
+    margin-right: 30px;
+    margin-left: 30px;
+    transition: transform .4s;
+}
+.gradiant3{
+
+    background-image: linear-gradient(to top,rgba(33, 41, 38, 0.575),rgba(33, 41, 38, 0.616),rgba(197, 212, 207,0),rgba(197, 212, 207,0)),url('images/natural3.jpeg');
+    height: 500px;
+    background-size:cover;
+    margin-right: 30px;
+    margin-left: 30px;
+    transition: transform .4s;
+}
+.gradiant:hover , .gradiant1:hover,.gradiant2:hover,.gradiant3:hover{
+    transform: scale(1.17);
+}
+
+
+/* instagram */
+.instagram .title-instagram h4{
+    float: left;
+    font-weight: 700;
+    font-size: 35px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.instagram .title-instagram button{
+    float: right;
+    padding: 10px 40px;
+    border-radius: 2.2rem;
+    border-color: rgba(0, 0, 0, 0.699);
+    margin-top: 10px;
+}
+.instagram .title-instagram button a{
+    color: black;
+}
+.instagram .title-instagram button a:hover{
+    color: white;
+}
+
+.flickity-button {
+    background: transparent;
+}
+.flickity-button-icon {
+    fill: black;
+}
+.flickity-button-icon:hover {
+    fill: white;
+}
+.flickity-prev-next-button.previous {
+    left: -55px;
+}
+.flickity-prev-next-button.next {
+  right: -55px;
+}
+.instagram .main-carousel .carousel-cell {
+    width: 25%;
+}
+.instagram .main-carousel .carousel-cell img{
+      max-width: 100%;
+      height: auto;
+  }
+/* footer */
+
+.footer .container .row .footer-col ul li ,.footer .container .row .footer-col #address{
+    font-size: 15px;
+    color:rgba(85, 85, 85, 0.932);
+}
+.footer .container .row .footer-col .social-list i{
+    font-size: 20px ;
+    margin-top: 10px;
+}
+.footer .container .row .footer-col h4{
+    color:rgba(85, 85, 85, 0.849) ;
+    
+}
+.copyright{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.603);
+    font-size: 13px;
+}
+
